@@ -10,3 +10,11 @@
 
 ## 提交
 - commit -m'' // commit的作用是把`暂存区(stage)`的`所有修改`，一次性全部提交到仓库的`当前分支`。
+
+## 删除
+- git rm 相当于 rm filename + git add filename
+
+## 远程仓库
+- $ ssh-keygen -t rsa -C "youremail@example.com"   // 创建ssh key ，先cd ~ 再cd .ssh ,再cat *.pub查看ssh key
+- git remote add origin git@server-name:path/repo-name.git // 将本地仓库和远程仓库关联 ，origin是给远程仓库起的名字，可以自己定义，默认是origin.
+- git push -u origin master //第一次推送master分支的所有内容,以后推送本地仓库的内容不用 -u 
