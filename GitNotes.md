@@ -18,3 +18,12 @@
 - $ ssh-keygen -t rsa -C "youremail@example.com"   // 创建ssh key ，先cd ~ 再cd .ssh ,再cat *.pub查看ssh key
 - git remote add origin git@server-name:path/repo-name.git // 将本地仓库和远程仓库关联 ，origin是给远程仓库起的名字，可以自己定义，默认是origin.
 - git push -u origin master //第一次推送master分支的所有内容,以后推送本地仓库的内容不用 -u 
+
+## 分支管理
+- 严格意义上讲，HEAD是指向当前分支的，而分支是指向某一个提交的。
+- 查看分支：git branch
+- 创建分支：git branch <name>
+- 切换分支：git checkout <name>
+- 创建+切换分支：git checkout -b <name>
+- 合并某分支到当前分支：git merge <name>
+- 删除分支：git branch -d <name>
