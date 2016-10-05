@@ -1,4 +1,5 @@
-> [阮一峰-常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?bsh_bid=5983510)
+
+# [阮一峰-常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?bsh_bid=5983510)
 ## 常用名词
 - Workspace：工作区
 - Index / Stage：暂存区
