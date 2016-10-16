@@ -38,3 +38,10 @@
 - 在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
 - 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
 - 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+## 放弃本地修改，强制更新
+```
+git fetch --all
+git reset --hard origin/master
+// git fetch 只是下载远程的库的内容，不做任何的合并 git reset 把HEAD指向刚刚下载的最新的版本
+```
